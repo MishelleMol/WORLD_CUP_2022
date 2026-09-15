@@ -29,6 +29,13 @@ def crear_grafo(oponente, peso_minimo=3):
             weight=fila["peso"]
         )
 
+    #Filtrar conexiones con peso_minimo o más EN ESA DIRECCIÓN
+    aristas_relevantes = [
+        (emisor, receptor) for emisor, receptor, datos in G.edges(data=True)
+        if datos["weight"] >= peso_minimo
+    ]
+    G = G.edge_subgraph(aristas_relevantes).copy()
+
     
     #Posición de los nodos
     pos = nx.spring_layout(G, seed=42, k=0.8)
@@ -59,11 +66,9 @@ def crear_grafo(oponente, peso_minimo=3):
     pesos = nx.get_edge_attributes(G, "weight")
     nx.draw_networkx_edge_labels(G, pos, edge_labels=pesos, font_size=8, label_pos=0.5)
  
-    plt.title(f"Brasil vs {oponente} - Pases completados")
+    plt.title(f"Brasil vs {oponente} - Pases completados (3+ pases por dirección)")
     plt.axis("off")
     plt.tight_layout()
     plt.show()
- 
- 
 #Grafo de partido de Brasil vs Camerún
 crear_grafo("Cameroon")
