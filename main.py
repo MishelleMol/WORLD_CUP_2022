@@ -254,7 +254,9 @@ plt.tight_layout()
 plt.savefig("Brasil_vs_Suiza.png", dpi=300, bbox_inches="tight")
 
 
-#3.4 Construcción del grafo  (Brasil y Camerún)
+
+
+#3.4 Construcción del grafo - Brasil y Camerún
 
 camerun = df_grupos[df_grupos["oponente"] == "Cameroon"] #Extraemos de la columna oponente a Camerún
 
