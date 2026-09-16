@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("Pases_brasil_grupos.csv")
 
 
-def crear_grafo(oponente, peso_minimo=3):
+def crear_grafo(oponente, peso_minimo=4):
     #Filtrar el partido: solo pases completos de ese rival
     partido = df[
         (df["oponente"] == oponente) &
