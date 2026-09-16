@@ -11,7 +11,7 @@ CONSTRUCCIÓN DEL GRAFO:
 -Pases completos: Decidimos utilizar únicamente los pases completados porque queremos representar las conexiones que realmente ocurrieron entre los jugadores. Un pase incompleto no genera una conexión efectiva entre el emisor y el receptor, por lo que usamos los pases completos para representar de manera más clara cómo circuló el balón.
 
 
-INTERPRETACIÓN:
+INTERPRETACIÓN DEL GRAFO:
 Los tres partidos tienen un número de pases completos parecido: 539 contra Serbia, 507 contra Suiza y 512 contra Camerún. Eso muestra un estilo de posesión constante, sin importar el rival.
 
 Contra Suiza la bola pasó mucho más por un mismo par de jugadores. Thiago y Marcos combinaron 60 pases entre los dos, casi el doble de cualquier otra conexión en los tres partidos. El grafo deja ver como Brasil se apoya en jugadores claves para construir sus jugadas, en vez de repartir el balón entre todo el equipo.
