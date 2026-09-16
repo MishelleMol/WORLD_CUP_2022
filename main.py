@@ -99,7 +99,7 @@ nx.draw_networkx_edges(
     pos, #coordenadas de los jugadores
     arrows=True, #Indice que si queremos flechas, ya que es dirigido
     arrowstyle="-|>", #define la forma de la punta de la flecha
-    arrowsize=18, #Define el tamaño de la punta
+    arrowsize=30, #Define el tamaño de la punta
     width=1, #Todas las conexiones serán del mismo grosor
     connectionstyle="arc3,rad=0.20", #Hace que las flechas tengan una pequeña curva 
     edge_color="gray" #flechas grises 
@@ -220,7 +220,7 @@ nx.draw_networkx_edges(
     pos_suiza, #Coordenadas de los jugadores
     arrows=True, #Indicamos que queremos flechas porque el grafo es dirigido
     arrowstyle="-|>", #Define la forma de la punta de la flecha
-    arrowsize=18, #Define el tamaño de la punta
+    arrowsize=30, #Define el tamaño de la punta
     width=1, #Todas las conexiones tendrán el mismo grosor
     connectionstyle="arc3,rad=0.20", #Hace que las flechas tengan una pequeña curva
     edge_color="gray" #Flechas grises
@@ -345,7 +345,7 @@ nx.draw_networkx_edges(
     pos_camerun, #Coordenadas de los jugadores
     arrows=True, #Indicamos que queremos flechas porque el grafo es dirigido
     arrowstyle="-|>", #Define la forma de la punta de la flecha
-    arrowsize=18, #Define el tamaño de la punta
+    arrowsize=30, #Define el tamaño de la punta
     width=1, #Todas las conexiones tendrán el mismo grosor
     connectionstyle="arc3,rad=0.20", #Hace que las flechas tengan una pequeña curva
     edge_color="gray" #Flechas grises
