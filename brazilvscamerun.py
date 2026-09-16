@@ -58,7 +58,7 @@ def crear_grafo(oponente, peso_minimo=4):
         arrows=True,
         arrowstyle="-|>",
         arrowsize=18,
-        connectionstyle="arc3,rad=0.12",
+        connectionstyle="arc3,rad=0.20",
         edge_color="gray"
     )
 
